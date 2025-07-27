@@ -17,7 +17,7 @@ import {
   Pie,
   Cell,
 } from 'recharts';
-import { TrendingUp, BarChart3, PieChart as PieChartIcon, Users } from 'lucide-react';
+import { TrendingUp, BarChart3, Users } from 'lucide-react';
 
 interface RateData {
   StateCode: string;
@@ -47,7 +47,7 @@ export default function Dashboard() {
       header: true,
       complete: (results) => {
         const parsedData = results.data
-          .map((row: any) => ({
+          .map((row: Record<string, string>) => ({
             ...row,
             IndividualRate: parseFloat(row.IndividualRate),
             Age: parseInt(row.Age),
@@ -55,7 +55,7 @@ export default function Dashboard() {
             Tobacco: row.Tobacco,
           }))
           .filter(
-            (row: any) =>
+            (row: RateData) =>
               !isNaN(row.IndividualRate) &&
               row.IndividualRate > 0 &&
               row.Age >= 0 &&
