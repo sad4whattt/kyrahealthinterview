@@ -24,6 +24,7 @@ interface RateData {
   Age: number;
   IndividualRate: number;
   Tobacco: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }
 
