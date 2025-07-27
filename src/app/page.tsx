@@ -45,9 +45,9 @@ export default function Dashboard() {
     Papa.parse('/rate-puf.csv', {
       download: true,
       header: true,
-      complete: (results) => {
+      complete: (results: { data: Record<string, string>[] }) => {
         const parsedData = results.data
-          .map((row: Record<string, string>) => ({
+          .map((row) => ({
             ...row,
             IndividualRate: parseFloat(row.IndividualRate),
             Age: parseInt(row.Age),
