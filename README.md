@@ -35,13 +35,17 @@ npm run dev
 - `public/rate-puf.csv`: The CSV data file used for analysis.
 - `package.json`: Lists all project dependencies.
 
-## Technologies Used
+## Learn More
 
-- **Next.js**: React framework for production-grade applications, enabling server-side rendering and routing.
-- **TypeScript**: Adds static typing to JavaScript, improving code quality and maintainability.
-- **Recharts**: A composable charting library built with React and D3.
-- **PapaParse**: A powerful CSV parser for the browser and Node.js.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Lucide React**: A collection of open-source icons.
+To learn more about Next.js, take a look at the following resources:
 
-This project serves as a demonstration of my ability to build modern web applications with data visualization capabilities!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
