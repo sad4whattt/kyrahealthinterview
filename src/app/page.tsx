@@ -43,7 +43,8 @@ export default function Dashboard() {
   const [selectedMetric, setSelectedMetric] = useState<'state' | 'age' | 'tobacco'>('state');
 
   useEffect(() => {
-    Papa.parse('/rate-puf.csv', {
+    const csvPath = `${window.location.origin}/rate-puf.csv`;
+    Papa.parse(csvPath, {
       download: true,
       header: true,
       complete: (results: { data: Record<string, string>[] }) => {
